@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Product from "./UI/Display/Products/Product";
+import LandingPage from "./UI/LandingPage/LandingPage";
+import Nav from "./UI/Nav/Nav";
+import Reg from "./UI/Reg/Reg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/reg" element={<Reg />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+// import { useState } from "react";
+// let productdata = [
+//   {
+//     name: "",
+//   },
+// ];
+
+//   const [name, setname] = useState();
+//   let arr = JSON.parse(localStorage.getItem("data")) || [];
+//   function storedata(event) {
+//     productdata[0].name = event.target.value;
+//     setname(productdata);
+//   }
+//   console.log(name);
+//   function test() {
+//     arr.push(name);
+//     localStorage.setItem("data", JSON.stringify(arr));
+//   }
+//    <input className="data" type="text" onChange={storedata} />
+//       <input type="button" value="ok" onClick={test} />

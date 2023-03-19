@@ -1,0 +1,82 @@
+.reg_form {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.reg_form a {
+  text-decoration: none;
+  color: aliceblue;
+}
+/* User css */
+.user_info {
+  height: 70%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: blue;
+  border-radius: 3%;
+}
+.user_info input {
+  width: 70%;
+  padding: 1% 2% 1% 2%;
+  margin: 1.5%;
+}
+.user_data:nth-child(3) {
+  width: 40%;
+}
+input::placeholder {
+  font-size: 1rem;
+}
+input {
+  font-size: 1rem;
+}
+/* Seller css */
+.seller_info {
+  height: 70%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(79, 219, 60);
+  border-radius: 3%;
+}
+.seller_info input {
+  width: 70%;
+  padding: 1% 2% 1% 2%;
+  margin: 1.5%;
+}
+.seller_data:nth-child(4) {
+  width: 40%;
+}
+#popup {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6%;
+  position: fixed;
+  flex-direction: column;
+}
+#popup button {
+  padding: 3% 23% 3% 23%;
+  font-size: 2rem;
+  margin: 20%;
+}
+#popup .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup h1 {
+  font-size: 5rem;
+}

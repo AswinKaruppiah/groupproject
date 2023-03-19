@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  /* color: beige; */
+}
+
+.title {
+  margin-left: 2%;
+}
+.title h1 {
+  font-size: 2rem;
+}
+.links {
+  margin-right: 3%;
+}
+.links a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 1rem;
+  color: #000000;
+}
