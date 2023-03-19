@@ -4,7 +4,8 @@
   display: flex;
   justify-content: baseline;
   place-content: center;
-  background-color: red;
+  background-color: black;
+  color: gainsboro;
 }
 
 .product .info {
