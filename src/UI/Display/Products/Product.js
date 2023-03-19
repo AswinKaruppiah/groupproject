@@ -5,7 +5,7 @@ function Product() {
   return (
     <div className="product">
       <div className="info">
-        <h1>aswin</h1>
+        <h1>Rawin</h1>
       </div>
     </div>
   );
