@@ -1,8 +1,10 @@
 .product {
   height: 100vh;
   width: 100vw;
-  display: grid;
+  display: flex;
+  justify-content: baseline;
   place-content: center;
+  background-color: red;
 }
 
 .product .info {
